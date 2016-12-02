@@ -13,7 +13,7 @@ namespace CalculatorCsharp
             Console.WriteLine("Добро пожаловать! Я калькулятор. \nЧто бы приступить к работе наберите start, а вот что я шарю))))");
             Console.WriteLine(" Сложение '+' \n Вычитание '-' \n Умножение '*' \n Деление '/' ");
             Console.WriteLine("Так же я уже шарю как находить остаток от деления и некоторые другие темы");
-            Console.WriteLine(" Остаток от деления '%' \n Возведение первого числа в степень второго числа '^'\n Логическое умножение '&' \n Для того, чтобы сравнить два числа напишите 'bool'");
+            Console.WriteLine(" Остаток от деления '%' \n Возведение первого числа в степень второго числа 'pow'\n Логическое умножение '&' \n Для того, чтобы сравнить два числа напишите 'bool'");
             string command = Console.ReadLine();
             if (command == "start" || command == "Start" || command == "START" || command == "s" || command == "S")
             {
@@ -47,7 +47,7 @@ namespace CalculatorCsharp
                     case "%":
                         Console.Write("Остатком от деления {0} на {1} является {2}", numberOne, numberTwo, numberOne % numberTwo);
                         break;
-                    case "^":
+                    case "pow":
                         Console.Write("Результатом возведения числа {0} в степень числа {1} является {2}", numberOne, numberTwo, Math.Pow(numberOne, numberTwo));
                         break;
                     case "bool":
@@ -67,11 +67,16 @@ namespace CalculatorCsharp
                     case "&":
                         Console.WriteLine("Результатом логического умножения числа {0} на число {1} является {2}",numberOne, numberTwo, (int)numberOne & (int)numberTwo);
                         break;
+                    case "^":
+                        Console.WriteLine("Результатом логического вычитания числа {0} и числа {1} является {2}", numberOne, numberTwo, (int)numberOne ^ (int)numberTwo);
+                        break;
+                    case "|":
+                        Console.WriteLine("Результатом логического сложения числа {0} и числа {1} является {2}", numberOne, numberTwo, (int)numberOne | (int)numberTwo);
+                        break;
                 }
             }
             Console.WriteLine("Досвидания");
             Console.ReadKey();
-
         }
     }
 }
