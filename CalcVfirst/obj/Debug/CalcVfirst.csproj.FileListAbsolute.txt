@@ -1,1 +1,2 @@
 c:\users\falle\documents\visual studio 2015\Projects\CalcVfirst\CalcVfirst\bin\Debug\CalcVfirst.exe.config
+C:\Users\falle\Documents\GitHub\Calculator\CalcVfirst\bin\Debug\CalcVfirst.exe.config
