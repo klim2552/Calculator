@@ -13,9 +13,9 @@ namespace CalculatorCsharp
             Console.WriteLine("Добро пожаловать. Я калькулятор. \nЧто бы приступить к работе наберите start, а вот что я шарю))))");
             Console.WriteLine(" Сложение '+' \n Вычитание '-' \n Умножение '*' \n Деление '/' ");
             Console.WriteLine("Так же я уже шарю как находить остаток от деления и некоторые другие темы");
-            Console.WriteLine(" Остаток от деления '%' \n Возведение первого числа в степень второго числа '^'\n  Так же можно сравнивать два числа.");
+            Console.WriteLine(" Остаток от деления '%' \n Возведение первого числа в степень второго числа '^'\n Логическое умножение '&' \n Для того, чтобы сравнить два числа напишите 'bool'");
             string command = Console.ReadLine();
-            if (command == "start" || command == "Start" || command == "START")
+            if (command == "start" || command == "Start" || command == "START" || command == "s" || command == "S")
             {
                 Console.WriteLine("Хорошо. А теперь введите первый аргумент");
                 double numberOne = double.Parse(Console.ReadLine());
@@ -59,10 +59,13 @@ namespace CalculatorCsharp
                         {
                             Console.WriteLine("Число {0} меньше числа {1}", numberOne, numberTwo);
                         }
-                        else
+                        if(numberOne == numberTwo)
                         {
                             Console.WriteLine("Число {0} равно числу {1}", numberOne, numberTwo);
                         }
+                        break;
+                    case "&":
+                        Console.WriteLine("Результатом логического умножения числа {0} на число {1} является {2}",numberOne, numberTwo, (int)numberOne & (int)numberTwo);
                         break;
                 }
             }
