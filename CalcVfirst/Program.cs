@@ -15,7 +15,7 @@ namespace CalculatorCsharp
             Console.WriteLine("Так же я уже шарю как находить остаток от деления и некоторые другие темы");
             Console.WriteLine(" Остаток от деления '%' \n Возведение первого числа в степень второго числа 'pow'\n Логическое умножение '&' \n Для того, чтобы сравнить два числа напишите 'bool'");
             string command = Console.ReadLine();
-            if (command == "start" || command == "Start" || command == "START" || command == "s" || command == "S")
+            while (command == "start" || command == "Start" || command == "START" || command == "s" || command == "S")
             {
                 Console.WriteLine("Хорошо. А теперь введите первый аргумент");
                 double numberOne = double.Parse(Console.ReadLine());
@@ -74,6 +74,10 @@ namespace CalculatorCsharp
                         Console.WriteLine("Результатом логического сложения числа {0} и числа {1} является {2}", numberOne, numberTwo, (int)numberOne | (int)numberTwo);
                         break;
                 }
+            }
+            if(command == "exit" || command == "EXIT" || command == "Exit")
+            {
+                Environment.Exit(0);
             }
             Console.WriteLine("Досвидания");
             Console.ReadKey();
