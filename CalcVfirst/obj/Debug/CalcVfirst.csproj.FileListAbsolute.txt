@@ -6,3 +6,9 @@ C:\Users\falle\Source\Repos\Calculator\Calculator\CalcVfirst\obj\Debug\CalcVfirs
 C:\Users\falle\Source\Repos\Calculator\Calculator\CalcVfirst\obj\Debug\CalcVfirst.csprojResolveAssemblyReference.cache
 C:\Users\falle\Source\Repos\Calculator\Calculator\CalcVfirst\bin\Debug\CalcVfirst.exe
 C:\Users\falle\Source\Repos\Calculator\Calculator\CalcVfirst\bin\Debug\CalcVfirst.pdb
+C:\Users\1пк1\Source\Repos\Calculator\CalcVfirst\bin\Debug\CalcVfirst.exe.config
+C:\Users\1пк1\Source\Repos\Calculator\CalcVfirst\obj\Debug\CalcVfirst.exe
+C:\Users\1пк1\Source\Repos\Calculator\CalcVfirst\obj\Debug\CalcVfirst.pdb
+C:\Users\1пк1\Source\Repos\Calculator\CalcVfirst\bin\Debug\CalcVfirst.exe
+C:\Users\1пк1\Source\Repos\Calculator\CalcVfirst\bin\Debug\CalcVfirst.pdb
+C:\Users\1пк1\Source\Repos\Calculator\CalcVfirst\obj\Debug\CalcVfirst.csprojResolveAssemblyReference.cache
