@@ -26,52 +26,55 @@ namespace CalculatorCsharp
                 switch (operation)
                 {
                     case "+":
-                        Console.Write("Результатом сложения {0} и {1} является {2}", numberOne, numberTwo, numberOne + numberTwo);
+                        Console.Write("Результатом сложения {0} и {1} является {2} \n", numberOne, numberTwo, numberOne + numberTwo);
                         break;
                     case "-":
-                        Console.Write("Результатом вычитания {0} и {1} является {2}", numberOne, numberTwo, numberOne - numberTwo);
+                        Console.Write("Результатом вычитания {0} и {1} является {2} \n", numberOne, numberTwo, numberOne - numberTwo);
                         break;
                     case "*":
-                        Console.Write("Результатом умножения {0} и {1} является {2}", numberOne, numberTwo, numberOne * numberTwo);
+                        Console.Write("Результатом умножения {0} и {1} является {2} \n", numberOne, numberTwo, numberOne * numberTwo);
                         break;
                     case "/":
                         if (numberTwo == 0)
                         {
-                            Console.WriteLine("Простите, но на 0 делить нельзя)");
+                            Console.WriteLine("Простите, но на 0 делить нельзя) \n");
                         }
                         else
                         {
-                            Console.Write("Результатом деления {0} и {1} является {2}", numberOne, numberTwo, numberOne / numberTwo);
+                            Console.Write("Результатом деления {0} и {1} является {2} \n", numberOne, numberTwo, numberOne / numberTwo);
                         }
                         break;
                     case "%":
-                        Console.Write("Остатком от деления {0} на {1} является {2}", numberOne, numberTwo, numberOne % numberTwo);
+                        Console.Write("Остатком от деления {0} на {1} является {2} \n", numberOne, numberTwo, numberOne % numberTwo);
                         break;
                     case "pow":
-                        Console.Write("Результатом возведения числа {0} в степень числа {1} является {2}", numberOne, numberTwo, Math.Pow(numberOne, numberTwo));
+                        Console.Write("Результатом возведения числа {0} в степень числа {1} является {2} \n", numberOne, numberTwo, Math.Pow(numberOne, numberTwo));
                         break;
                     case "bool":
                         if (numberOne > numberTwo)
                         {
-                            Console.WriteLine("Число {0} больше числа {1}", numberOne, numberTwo);
+                            Console.WriteLine("Число {0} больше числа {1} \n", numberOne, numberTwo);
                         }
                         if (numberOne < numberTwo)
                         {
-                            Console.WriteLine("Число {0} меньше числа {1}", numberOne, numberTwo);
+                            Console.WriteLine("Число {0} меньше числа {1} \n", numberOne, numberTwo);
                         }
                         if(numberOne == numberTwo)
                         {
-                            Console.WriteLine("Число {0} равно числу {1}", numberOne, numberTwo);
+                            Console.WriteLine("Число {0} равно числу {1} \n", numberOne, numberTwo);
                         }
                         break;
                     case "&":
-                        Console.WriteLine("Результатом логического умножения числа {0} на число {1} является {2}",numberOne, numberTwo, (int)numberOne & (int)numberTwo);
+                        Console.WriteLine("Результатом логического умножения числа {0} на число {1} является {2} \n", numberOne, numberTwo, (int)numberOne & (int)numberTwo);
                         break;
                     case "^":
-                        Console.WriteLine("Результатом логического вычитания числа {0} и числа {1} является {2}", numberOne, numberTwo, (int)numberOne ^ (int)numberTwo);
+                        Console.WriteLine("Результатом логического вычитания числа {0} и числа {1} является {2} \n", numberOne, numberTwo, (int)numberOne ^ (int)numberTwo);
                         break;
                     case "|":
-                        Console.WriteLine("Результатом логического сложения числа {0} и числа {1} является {2}", numberOne, numberTwo, (int)numberOne | (int)numberTwo);
+                        Console.WriteLine("Результатом логического сложения числа {0} и числа {1} является {2} \n", numberOne, numberTwo, (int)numberOne | (int)numberTwo);
+                        break;
+                    case "exit":
+                        Environment.Exit(0);
                         break;
                 }
             }
